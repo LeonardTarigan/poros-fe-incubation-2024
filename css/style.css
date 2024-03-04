@@ -1,0 +1,125 @@
+:root {
+  --poros-green: #28aa49;
+  --poros-yellow: #ffd633;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#text {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: blueviolet;
+}
+
+.styled-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: chocolate;
+}
+
+ul {
+  color: aquamarine;
+}
+
+.parent p {
+  color: red;
+}
+
+.parent-2 > p {
+  color: blue;
+}
+
+.parent-2 + p {
+  color: cadetblue;
+}
+
+/* .parent ~ p {
+  color: yellow;
+} */
+
+.box-model {
+  border: 5px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.flex-h {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.box {
+  width: 10rem;
+  height: 10rem;
+  background-color: limegreen;
+}
+
+.flex-start {
+  justify-content: start;
+  flex-wrap: wrap-reverse;
+}
+
+.flex-end {
+  justify-content: end;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-evenly {
+  justify-content: space-evenly;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.pos {
+  height: 20rem;
+  border: 2px solid black;
+  overflow-y: scroll;
+  /* position: relative; */
+}
+
+.pos-static {
+  position: static;
+}
+
+.pos-relative {
+  position: relative;
+  left: 2rem;
+}
+
+.pos-fixed {
+  position: fixed;
+  z-index: 10;
+  top: 10rem;
+}
+
+.pos-absolute {
+  /* position: absolute; */
+  right: 0;
+}
+
+.pos-sticky {
+  position: sticky;
+  top: 10px;
+  background-color: var(--poros-yellow);
+  z-index: 10;
+}
+
+@media (max-width: 1024px) {
+  .responsive-text {
+    font-size: 2rem;
+  }
+}
